@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: block;
 }
 
 .App-logo {
@@ -20,6 +21,52 @@
 
 .App-intro {
   font-size: large;
+}
+
+.heat-map {
+  width: 300px;
+  height: auto;
+}
+
+.red {
+  background-color: #ff6666;
+  width: 10px;
+  height: 10px;
+  display:inline-block;
+  margin-top:8px;
+}
+
+.green {
+  background-color: #80ff80;
+  width: 10px;
+  height: 10px;
+  display:inline-block;
+  margin-top:8px;
+}
+
+.blue {
+  background-color: #66b3ff;
+  width: 10px;
+  height: 10px;
+  display:inline-block;
+  margin-top:8px;
+}
+
+.react-calendar-heatmap .color-scale-1 {
+  fill: #ff6666;
+}
+
+.react-calendar-heatmap .color-scale-2 {
+  fill: #66b3ff;
+}
+
+.react-calendar-heatmap .color-scale-3 {
+  fill: #80ff80;
+}
+
+.color-icon {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 @keyframes App-logo-spin {

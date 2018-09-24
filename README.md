@@ -13,3 +13,6 @@
 6) By now `yarn start` will have finished and you should be able to see the results.
 
 7) The app is also deployed at https://darksky-heatmap.herokuapp.com/ for your convienence. 
+
+
+Note: Darksky has a strict 1,000 per _24 hours_ limit on api calls so please limit the amount of times you refresh :)

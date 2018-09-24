@@ -1,7 +1,11 @@
+const path = require('path');
 var express = require('express')
 var app = express();
-var moment = require('moment');
 var axios = require('axios');
+
+app.use('/static', express.static('build/static'));
+app.use('/build', express.static('build'));
+
 
 app.get('/get_weather_data/:unix_time', function (req, res) {
     var unix_time = req.params.unix_time; //CHANGE
@@ -10,4 +14,10 @@ app.get('/get_weather_data/:unix_time', function (req, res) {
     });
 })
 
-app.listen(3002)
+app.get('/*', function (req, res) {
+    console.log("in star")
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+app.listen(process.env.PORT || 3002);
+
